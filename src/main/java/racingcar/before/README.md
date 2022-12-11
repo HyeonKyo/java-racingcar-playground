@@ -12,9 +12,8 @@
 * 시도 횟수 입력 (getTurn())
   * 예외처리
 * 시도 횟수만큼 턴 수행 (gameStart())
-  * 각 자동차 전진 거리를 Random으로 구하기
-  * 전진 총 거리 저장
-  * 턴 별 결과 출력
+  * 자동차들 전진
+  * 결과 출력
 * 결과 출력
   * 총 거리로 우승자 선택
   * 우승자 출력
@@ -22,24 +21,25 @@
 ## 클래스 설계
 * 자동차(Car)
   * 필드 : 이름, 전진거리
+  * move()
   * printStatus()
-  * 
 * 자동차들 (Cars)
   * List<Car>의 일급클래스
-  * 
 * 레이싱 게임 (RacingGame)
   * setGame()
   * runGame()
   * printWinner()
 * 사용자 입력 파싱 클래스 (GameInput)
 * 게임 유저 입출력 (GameIO)
-  * 
 
 ## TDD 순서
 * Car 클래스 Test
-  * [ ] 생성 TEST
-  * [ ] move(거리) Test
-  * [ ] print Test
+  * [x] 생성 TEST
+  * [x] move() Test
+    * [x] 해당 값이 4이상이면 dist++ && true 리턴
+          아니면 false 리턴
+  * [x] print Test
+* [ ] 랜덤 숫자 생성 Util 클래스
 * Cars Test
   * [ ] 턴 수행
   * [ ] 우승자 찾기
