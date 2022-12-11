@@ -36,10 +36,9 @@
 * Car 클래스 Test
   * [x] 생성 TEST
   * [x] move() Test
-    * [x] 해당 값이 4이상이면 dist++ && true 리턴
-          아니면 false 리턴
+    * [x] 해당 값이 4이상이면 dist++
   * [x] print Test
-* [ ] 랜덤 숫자 생성 Util 클래스
+* [x] 랜덤 숫자 생성 Util 클래스
 * Cars Test
   * [ ] 턴 수행
   * [ ] 우승자 찾기

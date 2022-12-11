@@ -39,9 +39,10 @@ public class CarTest {
     void move_test() {
         int notMoveDistance = Car.MIN_MOVE_VALUE - 1;
         int moveDistance = Car.MIN_MOVE_VALUE;
-        assertThat(car.move(notMoveDistance)).isFalse();
+
+        car.move(notMoveDistance);
         assertThat(car.getDistance()).isZero();
-        assertThat(car.move(moveDistance)).isTrue();
+        car.move(moveDistance);
         assertThat(car.getDistance()).isOne();
     }
 

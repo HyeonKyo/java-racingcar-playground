@@ -12,13 +12,11 @@ public class Car {
         this.name = name;
     }
 
-    public boolean move(int value) {
+    public void move(int value) {
         checkRangeOfValue(value);
         if (value >= MIN_MOVE_VALUE) {
             distance++;
-            return true;
         }
-        return false;
     }
 
     private void checkRangeOfValue(int value) {
