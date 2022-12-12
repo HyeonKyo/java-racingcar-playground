@@ -50,7 +50,7 @@
   * [x] 자동차 이름 입력 및 예외처리
   * [x] 턴 숫자 입력 및 예외처리
   * [x] 우승자 출력
-* RacingGame
-  * [ ] setGame()
-  * [ ] runGame()
-  * [ ] printWinner()
+* [x] RacingGame
+  * setGame() -> GameIO로 입력 받아서 게임정보 세팅
+  * runGame() -> 게임 진행시키고 정보 출력
+  * printWinner() -> 최종 우승자 출력
