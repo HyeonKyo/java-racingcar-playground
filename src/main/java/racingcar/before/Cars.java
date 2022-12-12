@@ -1,11 +1,16 @@
 package racingcar.before;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Cars {
     private List<Car> cars;
+
+    public Cars(String[] names) {
+        this.cars = mapCars(names);
+    }
 
     public Cars(List<Car> cars) {
         this.cars = cars;
@@ -28,6 +33,12 @@ public class Cars {
         return cars.stream()
                 .filter(car -> car.getDistance() == maxDistance)
                 .map(Car::getName)
+                .collect(Collectors.toList());
+    }
+
+    private List<Car> mapCars(String[] names) {
+        return Arrays.stream(names)
+                .map(Car::new)
                 .collect(Collectors.toList());
     }
 
